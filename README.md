@@ -39,8 +39,8 @@ networks:
       com.docker.network.bridge.name: vnet
 services:
   xteve:
-    container_name: Xteve
-    image: registry.cn-chengdu.aliyuncs.com/clion/Xteve:latest
+    container_name: xteve
+    image: hub.docker.com/r/clion007/xteve:latest
     environment:
       - UMASK=022
       - PUID=1000
@@ -71,7 +71,7 @@ docker run -d \
   -v /path/to/config:/config \
   -v /etc/localtime:/etc/localtime:ro \
   --restart unless-stopped \
-  registry.cn-chengdu.aliyuncs.com/clion/xteve:latest
+  hub.docker.com/r/clion007/xteve:latest
 ```
 
 Get more help in settings, you can read the documents of [Xteve Offical](https://github.com/xteve-project/xTeVe-Documentation/blob/master/en/configuration.md)
