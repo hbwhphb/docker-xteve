@@ -42,8 +42,8 @@ jobs:
         tags: |
           clion007/xteve:latest
           clion007/xteve:${{ steps.getVersion.outputs.Version }}
-          registry.cn-chengdu.aliyuncs.com/clion/xteve:latest
-          registry.cn-chengdu.aliyuncs.com/clion/xteve:${{ steps.getVersion.outputs.Version }}
+          hub.docker.com/r/clion007/xteve:latest
+          hub.docker.com/r/clion007/xteve:${{ steps.getVersion.outputs.Version }}
         
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@v2
